@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskChatBot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <!--Header-->
+    <header class="main-header">
+        <div class="logo-section">
+            <div class="logo-icon"><i class="fas fa-sun"></i></div>
+            <div class="logo-text">SOLAIRE <span>ONLINE</span></div>
+        </div>
+        <!--NAV-->
+        <nav class="top-nav">
+            <a href=""><i class="fa-light fa-slot-machine"></i>Live Slots</a>
+            <a href=""><i class="fas fa-dice"></i>Live Casino</a>
+            <a href=""><i class="fas fa-gamepad"></i>e-Games</a>
+            <a href="" class="active"><i class="fas fa-futbol"></i>Sportsbook</a>
+            <a href="" class="promotions"><i class="fas fa-gift"></i>Promotions</a>
+        </nav>
+        <!--User Panel-->
+        <div class="user-panel">
+           <div class="lang-select">English <i class="fas fa-chevron-down"></i></div>
+            <div class="divider">|</div>
+            <a href="#">Live Chat</a>
+            <div class="divider">|</div>
+            <a href="#">Register</a>
+            <button class="btn-login">Login</button>
+        </div>
+    </header>
+
+        <!--Sub Header-->
+    
+        <div class="sub-header">
+            <a href="" class="sub-link active">Home</a>
+            <a href="" class="sub-link">InPlay</a>
+        </div>
+    
+        <!--Main Layout-->
+        <div class="layout-container">
+
+            <!--Left Sidebar-->
+            <aside class="sidebar-left">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Type to search...">
+                </div>
+
+                <!--Menu Gourp-->
+                <div class="menu-group">
+                    <div class="menu-item"><i class="far fa-calendar-alt"></i>Schedule<span class="arrow"><i class="fas fa-chevron-right"></i></span></div>
+                </div>
+
+                <!--Sports List-->
+                <div class="sports-list">
+                    <div class="sport-item">
+                    <div class="sport-name"><i class="fas fa-basketball-ball"></i> Basketball</div>
+                    <div class="sport-meta">
+                        <span class="count">241</span>
+                        <i class="far fa-star"></i>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <div class="sport-item">
+                    <div class="sport-name"><i class="fas fa-volleyball-ball"></i> Volleyball</div>
+                    <div class="sport-meta">
+                        <span class="count">52</span>
+                        <i class="far fa-star"></i>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <div class="sport-item active">
+                    <div class="sport-name"><i class="fas fa-futbol"></i> Soccer</div>
+                    <div class="sport-meta">
+                        <span class="count">990</span>
+                        <i class="far fa-star"></i>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <div class="sport-item">
+                    <div class="sport-name"><i class="fas fa-table-tennis"></i> Tennis</div>
+                    <div class="sport-meta">
+                        <span class="count">113</span>
+                        <i class="far fa-star"></i>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <div class="sport-item">
+                    <div class="sport-name"><i class="fas fa-baseball-ball"></i> Baseball</div>
+                    <div class="sport-meta">
+                        <span class="count">11</span>
+                        <i class="far fa-star"></i>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <div class="sport-item">
+                    <div class="sport-name"><i class="fas fa-football-ball"></i> Football</div>
+                    <div class="sport-meta">
+                        <span class="count">76</span>
+                        <i class="far fa-star"></i>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <div class="sport-item">
+                    <div class="sport-name"><i class="fas fa-fist-raised"></i> Boxing</div>
+                    <div class="sport-meta">
+                        <span class="count">33</span>
+                        <i class="far fa-star"></i>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <div class="sport-item">
+                    <div class="sport-name"><i class="fas fa-hand-rock"></i> MMA</div>
+                    <div class="sport-meta">
+                        <span class="count">56</span>
+                        <i class="far fa-star"></i>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                </div>
+            </aside>
+
+            <!--Main Content-->
+            <main class="content-center">
+
+                <!--Hero Matches-->
+                <div class="hero-matches">
+                    <div class="hero-card">
+                        <div class="card-header">
+                            <span>Sunday 22:00</span>
+                        </div>
+
+                        <div class="match-info">
+                            <div class="names">
+                                <div>Crystal Palace</div>
+                                <div>Manchester City</div>
+                            </div>
+                            <div class="ball-img"><i class="fas fa-futbol"></i></div>
+                        </div>
+
+                        <div class="hero-odds">
+                            <button class="odd-btn">
+                                <span class="label">1</span>
+                                <span class="value">4.10</span>
+                            </button>
+
+                            <button class="odd-btn">
+                                <span class="label">X</span>
+                                <span class="value">3.80</span>
+                            </button>
+
+                            <button class="odd-btn">
+                                <span class="label">2</span>
+                                <span class="value">1.83</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="hero-card">
+                        <div class="card-header">
+                            <span>Sunday 22:00</span>
+                            </div>
+
+                        <div class="match-info">
+                            <div class="names">
+                                <div>West Ham United</div>
+                                <div>Aston Villa</div>
+                            </div>
+                            <div class="ball-img"><i class="fas fa-futbol"></i></div>
+                        </div>
+
+                        <div class="hero-odds">
+                            <button class="odd-btn">
+                                <span class="label">1</span>
+                                <span class="value">4.10</span>
+                            </button>
+
+                            <button class="odd-btn">
+                                <span class="label">X</span>
+                                <span class="value">3.80</span>
+                            </button>
+
+                            <button class="odd-btn">
+                                <span class="label">2</span>
+                                <span class="value">1.83</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Inplay Section-->
+                <div class="inplay-section">
+                    <div class="section-header">
+                        <h2>InPlay</h2>
+                        <a href="" class="view-all">101 events<i class="fas fa-chevron-right"></i></a>
+                    </div>
+
+                    <!--Sports Tab-->
+                    <div class="sport-tabs">
+                        <button class="tab active"><i class="fas fa-basketball-ball"></i> Basketball</button>
+                        <button class="tab"><i class="fas fa-volleyball-ball"></i> Volleyball</button>
+                        <button class="tab"><i class="fas fa-futbol"></i> Soccer</button>
+                        <button class="tab"><i class="fas fa-table-tennis"></i> Tennis</button>
+                        <button class="tab"><i class="fas fa-baseball-ball"></i> Baseball</button>
+                        <button class="tab"><i class="fas fa-hockey-puck"></i> Ice Hockey</button>
+                    </div>
+                </div>
+            </main>
+
+            <!--Right Sidebar-->
+            <aside class="sidebar-right">
+                <div class="betslip-nav">
+                    <div class="nav-item active">BetSlip <span class="badge">0</span></div>
+                    <div class="nav-item">My bets</div>
+                </div>
+
+                <div class="betslip-content empty">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>No bets selected</p>
+                </div>
+            </aside>
+        </div>
+        
+        <!--Chatbot-->
+        <div class="chatbot-widget">
+            <input type="checkbox" id="chat-toggle" hidden>
+            <div class="chat-window">
+                <div class="chat-header">
+                    <h3>Support Chat</h3>
+                    <label for="chat-toggle" class="close-chat"><i class="fas fa-times"></i></label>
+                </div>
+
+                <div class="chat-body" id="chat-body">
+                    <div class="message bot">
+                        <p>Chatbot is here! How can I help you?</p>
+                    </div>
+                </div>
+
+                <div class="chat-footer">
+                    <input type="text" id="user-input" placeholder="Type a message...">
+                    <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <label for="chat-toggle" class="chat-btn">
+                <i class="fas fa-comment-dots"></i>
+            </label>
+        </div>
+        
+        <!--Chatbot Script with Webhooks-->
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const WEBHOOK_URL = 'https://hook.us2.make.com/phwyu8cm32bxtxlmh6hfnkn9oq1qeh7y'; 
+
+            const sendBtn = document.getElementById('send-btn');
+            const userInput = document.getElementById('user-input');
+            const chatBody = document.getElementById('chat-body');
+
+            async function sendMessage() {
+                const message = userInput.value.trim();
+                if (!message) return;
+
+                // Display User Message
+                appendMessage(message, 'user');
+                userInput.value = '';
+
+                // Send to Webhook
+                try {
+                    const response = await fetch(WEBHOOK_URL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ 
+                            content: message, 
+                            timestamp: new Date().toISOString() 
+                        })
+                    });
+
+                    if (response.ok) {
+                        // Handle Webhook Reply
+                        const replyText = await response.text(); 
+                        
+                        if (replyText) {
+                            appendMessage(replyText, 'bot');
+                        } else {
+                            console.log('Message sent, no content in response.');
+                        }
+                    } else {
+                        console.error('Webhook error:', response.status);
+                        appendMessage('Error sending message. Server responded with ' + response.status, 'bot');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    appendMessage('Error: Could not connect to the webhook.', 'bot');
+                }
+            }
+
+            function appendMessage(text, sender) {
+                const msgDiv = document.createElement('div');
+                msgDiv.classList.add('message', sender);
+                // Simple HTML escaping for security
+                const p = document.createElement('p');
+                p.textContent = text;
+                msgDiv.appendChild(p);
+                chatBody.appendChild(msgDiv);
+                chatBody.scrollTop = chatBody.scrollHeight;
+            }
+
+            // Event Listeners
+            sendBtn.addEventListener('click', sendMessage);
+            userInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') sendMessage();
+            });
+        });
+    </script>
+
+</body>
+</html>
