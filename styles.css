@@ -582,3 +582,196 @@ body {
     20% { opacity: 1; }
     100% { opacity: 0.1; }
 }
+
+@media screen and (max-width: 1024px) {
+    /* Tablet: Stack the Right Sidebar (Betslip) to the bottom */
+    .sidebar-right {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #1a1a1a;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* ---  RESET LAYOUT (Disable Fixed Height) --- */
+    body {
+        height: auto; /* Allow body to grow */
+        overflow-y: auto; /* Use native browser scroll */
+        display: block;
+    }
+
+    .layout-container {
+        flex-direction: column; /* Stack columns vertically */
+        height: auto;
+        overflow: visible;
+    }
+
+    /* --- HEADER ADAPTATION --- */
+    .main-header {
+        height: auto;
+        flex-direction: column;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    .logo-section {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    /* Make Top Nav Scrollable Horizontally (No Hamburger needed) */
+    .top-nav {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 5px;
+        /* Hide scrollbar for cleaner look */
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .top-nav::-webkit-scrollbar {
+        height: 0px; /* Hide scrollbar but keep functionality */
+        background: transparent;
+    }
+
+    .top-nav a {
+        white-space: nowrap; /* Prevent text wrapping */
+        padding: 0 15px;
+        font-size: 12px;
+    }
+
+    .user-panel {
+        width: 100%;
+        justify-content: center;
+        border-top: 1px solid #1a1a1a;
+        padding-top: 10px;
+    }
+
+    /* --COLUMN STACKING --- */
+    /* Sidebar Left (Sports Menu) */
+    .sidebar-left {
+        width: 100%;
+        height: auto; 
+        max-height: 250px; /* Limit height so users don't scroll forever */
+        overflow-y: auto;
+        border-right: none;
+        border-bottom: 1px solid #1a1a1a;
+        order: 2; /* Put navigation AFTER content or limit its size */
+    }
+
+    /* Main Content */
+    .content-center {
+        width: 100%;
+        height: auto;
+        overflow: visible;
+        padding: 15px;
+        order: 1; /* Content comes first on mobile */
+    }
+
+    /* Sidebar Right (Betslip) */
+    .sidebar-right {
+        width: 100%;
+        height: auto;
+        border-left: none;
+        border-top: 1px solid #1a1a1a;
+        order: 3; /* Betslip at the very bottom */
+    }
+
+   
+    
+    /* Hero Matches - Stack Cards */
+    .hero-matches {
+        flex-direction: column;
+    }
+
+    .hero-card {
+        min-height: auto;
+    }
+
+    /* Odds Buttons - Make them touch-friendly */
+    .odd-btn {
+        padding: 10px;
+    }
+
+    /* Sub Header - Scrollable */
+    .sub-header {
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding: 0 20px;
+    }
+    
+    .sub-link {
+        white-space: nowrap;
+        margin-right: 20px;
+    }
+
+    /* Chatbot Window Mobile  */
+    .chat-window {
+        width: 90%; /* Take up most of the screen width */
+        right: 5%; /* Center it roughly */
+        bottom: 90px;
+        height: 60vh; /* Shorter height on mobile */
+    }
+    
+    .chatbot-widget {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* =========================================
+   MOBILE CHATBOT 
+   ========================================= */
+
+@media screen and (max-width: 480px) {
+    
+    /* Position the Widget Button safely */
+    .chatbot-widget {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .chat-btn {
+        width: 50px;      
+        height: 50px;
+        font-size: 20px;
+    }
+
+    /*  Make the Window Responsive */
+    .chat-window {
+        /* Break out of the corner positioning */
+        position: fixed; 
+        
+        /* Center horizontally */
+        left: 50%;
+        right: auto;
+        
+        /* Width relative to screen size */
+        width: 90vw;      
+        max-width: 350px;  
+        
+        /* Height adjustment */
+        height: 60vh;      
+        bottom: 80px;      
+        transform: translateX(-50%) translateY(20px);
+    }
+
+   
+    #chat-toggle:checked ~ .chat-window {
+        opacity: 1;
+        
+        transform: translateX(-50%) translateY(0);
+        pointer-events: all;
+    }
+
+    
+    .chat-footer input {
+        font-size: 16px; 
+        padding: 12px;
+    }
+    
+    
+    .chat-header h3 {
+        font-size: 14px;
+    }
+}
